@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Dictionary</h1>
+
+    <div id="search-section">
+        <h2>言葉を検索</h2>
+        <input type="text" id="search-input" placeholder="検索キーワード (名称のみ)">
+        <button id="search-button">検索</button>
+        <button id="clear-search-button">クリア</button>
+        <p id="search-message"></p>
+    </div>
+
+    <hr>
+
+    <div id="dictionary-list">
+        <h2>言葉一覧</h2>
+        <ul id="entries">
+            </ul>
+    </div>
+
+    <hr>
+
+    <div id="edit-section">
+        <h2>言葉の追加/編集</h2>
+        <input type="password" id="password" placeholder="パスワードを入力してください">
+        <button id="show-edit-form-button">編集フォームを表示</button>
+
+        <div id="add-edit-form" style="display: none;">
+            <input type="text" id="entry-name" placeholder="名前 (例: Glitch)" required>
+            <textarea id="entry-description" placeholder="説明 (例: 簡単なWebアプリを素早く作れるプラットフォーム)" rows="5" required></textarea>
+            <button id="add-entry-button">追加/更新</button>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
