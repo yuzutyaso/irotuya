@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= entry.name %> | My Dictionary</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto; /* 中央寄せ */
+        }
+        h1 {
+            color: #0056b3;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2em; /* 詳細ページの名称を大きく */
+        }
+        p {
+            font-size: 1.1em;
+            white-space: pre-wrap; /* 改行を保持 */
+            word-wrap: break-word; /* 長い単語を折り返す */
+        }
+        a {
+            display: inline-block; /* ボタンのように見せる */
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 4px;
+            text-decoration: none; /* 下線を除去 */
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><%= entry.name %></h1>
+        <p><%= entry.description %></p>
+        <a href="/">辞典に戻る</a>
+    </div>
+</body>
+</html>
