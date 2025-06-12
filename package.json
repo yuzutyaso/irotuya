@@ -1,0 +1,16 @@
+{
+  "name": "my-dictionary",
+  "version": "1.0.0",
+  "description": "A simple dictionary with password protection on Glitch.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ejs": "^3.1.9"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
